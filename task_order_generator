@@ -1,0 +1,10 @@
+import random
+def task_order_generator():
+    nTasks = int(input())
+    list = []
+    while len(list) < nTasks:
+        a = random.randint(1,nTasks)
+        if a not in list:
+            list.append(a)
+    print(list)
+task_order_generator()
